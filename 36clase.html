@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Clase 36- Var, Let y const</title>
+  </head>
+  <body>
+    <script>
+    var tatiana = {
+      nombre: 'Tatiana',
+      apellido: 'Borda',
+      edad: 28
+    }
+      function esMayorDeEdad(persona){
+        let mensaje
+        if(persona.edad>=18){
+           mensaje = 'Es mayor de edad'
+        }else{
+           mensaje = 'No es mayor de edad'
+        }
+        console.log(mensaje)
+      }
+      esMayorDeEdad(tatiana)
+
+      for(var i= 0; i<10; i++){
+        console.log(i)
+      }
+      console.log(`Terminó el for, i vale ${i}`)
+    </script>
+  </body>
+</html>

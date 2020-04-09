@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Clase 42- Contexto</title>
+  </head>
+  <body>
+    <script>
+      const tatiana ={
+        nombre: 'Tatiana',
+        apellido: 'Borda'
+      }
+      function saludar(){
+        console.log(`Mi nombre es ${this.nombre}`)
+      }
+      const saludarATatiana= saludar.bind(tatiana)
+    </script>
+  </body>
+</html>

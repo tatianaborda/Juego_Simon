@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Clase40- Closures</title>
+  </head>
+  <body>
+    <script>
+      function crearSaludo(finalDeFrase){
+        return function (nombre){
+          console.log(`Hola ${nombre} ${finalDeFrase}`)
+        }
+      }
+      const saludoArgentino = crearSaludo('che')
+      const saludoMexicano = crearSaludo('wey')
+      const saludoColombiano = crearSaludo('amigo')
+
+      saludoArgentino('Tatiana')
+      saludoMexicano('Tatiana')
+      saludoColombiano('Tatiana')
+    </script>
+  </body>
+</html>
